@@ -5,7 +5,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class NetworkUtils {
     companion object {
-        fun retroFitInstance(path:String) : Retrofit{
+        fun getRetroFitInstance(path:String) : Retrofit{
             return Retrofit.Builder()
                 .baseUrl(path)
                 .addConverterFactory(GsonConverterFactory.create())
